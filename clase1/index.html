@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1 - Maquetación web</title>
+    <!--Aplicando CSS de forma Interna-->
+    <!--
+    <style>
+        /*Selectores para aplicar CSS
+            * Etiquetas (h1 -h2 - p - ul)
+            * id ( #identificador)
+            * class ( .nombreClase )
+            * Selector Universal ( * )
+        */
+        h2{
+            /*Propiedad : Valor*/
+            color: red;  /*Nombre del color - Hexadecimal  - RGB - RGBA*/
+        }
+        .articulo{
+            /*                       0 hasta 255
+            background-color: rgba(0, 0, 0, 0.2);*/
+            background-color: #E84648;
+        }
+
+    </style>
+    -->
+    <!--Aplicando CSS de forma Externa-->
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <figure class="logo">
+                <img src="img/logo-daniel.png" alt="Logo de Daniel">
+            </figure>
+            <nav class="menu">
+                <ul class="opciones">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><a href="#">Iniciar sesión</a></li>
+                    <li><a href="#">Registrarme</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="imagen">
+            <img src="img/banner1.jpg" alt="Banner principal">
+        </section>
+        <section class="titulo">
+            <!--Aplicando CSS de forma en línea-->
+            <!--<h1 style="color : red">Tenemos las mejores Motos para ti</h1>-->
+            <h1>Tenemos las mejores Motos para ti</h1>
+        </section>
+        <section class="productos">
+            <article class="articulo">
+                <img src="img/cb190r-negra.jpg" alt="Moto">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores aut deserunt deleniti hic cumque eos!</p>
+                <h2>Precio: $162.000</h2>
+                <a href="#">Ver detalle</a>
+            </article>
+            <article class="articulo">
+                <img src="img/cb190r-repsol.jpg" alt="Moto">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores aut deserunt deleniti hic cumque eos!</p>
+                <h2>Precio: $256.000</h2>
+                <a href="#">Ver detalle</a>
+            </article>
+            <article class="articulo">
+                <img src="img/cgtitan-color-blanco.jpg" alt="Moto">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores aut deserunt deleniti hic cumque eos!</p>
+                <h2>Precio: $98.000</h2>
+                <a href="#">Ver detalle</a>
+            </article>
+            <article class="articulo">
+                <img src="img/color-rojo-wave.jpg" alt="Moto">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores aut deserunt deleniti hic cumque eos!</p>
+                <h2>Precio: $220.000</h2>
+                <a href="#">Ver detalle</a>
+            </article>
+        </section>
+        <section class="publicidad">
+            <img src="img/banner3.jpg" alt="Banner Publicitario">
+        </section>
+        <footer class="footer">
+            <article class="derechos">
+                <h3>Todos los derechos reservados: MSc. Ángel Daniel Fuentes</h3>
+            </article>
+            <article class="redesSociales">
+                <a href="https://www.facebook.com">Facebook</a>
+                <a href="https://www.instagram.com">Instagram</a>
+            </article>
+        </footer>
+    </main>
+</body>
+</html>

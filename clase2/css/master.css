@@ -1,0 +1,133 @@
+/*------- Aplicando CSS Global -------*/
+/*Selector universal*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+img , video{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+
+/*-------------------------------------*/
+/*---- Aplicando CSS al Header----*/
+.header{
+    display: flex;
+    background-color: teal;
+}
+.logo{
+    width: 10%;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+}
+.opciones{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+/*Selectores descendientes*/
+ul.opciones li a, ul.inicio li a{
+    color: white;
+}
+/*Pseudo Clases*/
+ul.opciones li a:hover, ul.inicio li a:hover{
+    color: blue;
+    border: blue solid 1px;
+    border-radius: 10px;
+    padding: 5px 0;
+    background-color: #EEEEEE;
+}
+
+.inicio{
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+/*---- Aplicando CSS a la sección título ----*/
+.titulo{
+    background-color: #E6ECEC;
+}
+
+/*---- Aplicando CSS a la sección de los Productos ----*/
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.articulo{
+    width: 25%;
+    padding: 10px;
+    background-color: #E6ECEC;
+    
+}
+.tarjeta{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.boton{
+    color: white;
+    background-color: teal;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.boton:hover{
+    color: teal;
+    background-color: white;
+    border: solid 1px teal;
+}
+
+/*---- Aplicando CSS a la sección de Publicidad  ----*/
+.publicidad{
+    background-image: url('../img/banner3.jpg');
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 200px;
+}
+.tituloPublicidad{
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    padding: 50px 0;
+    text-align: center;
+    font-size: 3rem;  /*Unidades de medidas: Absolutas (px) - Relativas (% - em - rem - vw - vh)   La Fuente de los parrafos ==  16px   ---  */
+}
+
+/*--- Aplicando CSS a nuestro Footer ---*/
+.footer{
+    display: flex;
+    padding: 25px 10px;
+    justify-content: space-between;
+    background-color: teal;
+}
+
+.derechos h3{
+    color: white;
+}
+.redesSociales{
+    display: flex;
+}
+.redesSociales h2 a{
+    color: white;
+}
+.redesSociales h2 a:hover{
+    color: red;
+    background-color: white;
+    padding: 5px;
+}
+

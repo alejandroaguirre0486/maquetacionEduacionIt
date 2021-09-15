@@ -1,0 +1,134 @@
+/*Aplicando CSS usando el selector universal*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*Aplicación Global a ciertas etiquetas*/
+img{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/*Aplicando CSS al Header*/
+header{
+    text-align: center;
+    background-color: teal;
+    padding-bottom: 15px;
+}
+.opciones li a, .inicio li a{
+    font-size: 1.5rem;  /*Medidas Absolutas ( px )  Medidas Relativas: % - em - rem vw vh   ( 16px --- 2rem ==> 2*16) */
+    color: white;
+}
+.opciones li a:hover, .inicio li a:hover{
+    text-decoration: underline;
+    color: teal;
+    background-color: white;
+}
+
+/*Aplicando CSS a la sección de la imagen*/
+.imagen{
+    display: none;
+}
+/*Aplicando CSS a la sección del Titulo*/
+.titulo{
+    text-align: center;
+    font-size: 2rem;
+}
+/*Aplicando CSS a la sección de productos*/
+.productos{
+    text-align: center;
+}
+.boton{
+    background-color: teal;
+    color: white;
+    border-radius: 10px;
+    border: 1px red solid;
+}
+/*---- Aplicando CSS a la sección de Publicidad  ----*/
+.publicidad{
+    background-image: url('../img/banner3.jpg');
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 200px;
+}
+.tituloPublicidad{
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    padding: 50px 0;
+    text-align: center;
+    font-size: 3rem;  /*Unidades de medidas: Absolutas (px) - Relativas (% - em - rem - vw - vh)   La Fuente de los parrafos ==  16px   ---  */
+}
+
+/*Aplicando CSS a nuestro Footer*/
+.footer{
+    text-align: center;
+    background-color: teal;
+    color: white;
+    padding: 15px 0;
+}
+.redesSociales h2 a{
+    color: white;
+}
+
+/*Aplicando el uso de las medias queries*/
+/*Aplicando CSS para una Tablet*/
+@media(min-width: 768px){
+    .header{
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        align-items: center;
+    }
+    .opciones{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .inicio{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .opciones li a, .inicio li a{
+        font-size: 1.1rem;  /*Medidas Absolutas ( px )  Medidas Relativas: % - em - rem vw vh   ( 16px --- 2rem ==> 2*16) */
+        color: white;
+    }
+    /*Aplicando CSS a la seccvión imagen*/
+    .imagen{
+        display: block;
+    }
+    .productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /*Aplicando CSS al Footer*/
+    .footer{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-content: space-between;
+    }
+    .redesSociales{
+        display: flex;
+    }
+}
+/*Aplicando CSS para dispositivos grandes - Desktops*/
+@media(min-width: 992px){
+    .productos{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+
+
+}
+
+
+
